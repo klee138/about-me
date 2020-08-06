@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <style>
-      body {
-         background-color: #cecece;
-            }
-      .footer {
-         position: fixed;
-         left: 0;
-         bottom: 0;
-         width: 100%;
-         background-color: gray;
-         color: white;
-         text-align: center;
-      }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/52a7b5ec9a.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" style="color:white; background-color: teal; padding: 10px 10px 10px 10px; margin: -8px" href="#">Kevin Lee</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" id="name" href="#">Kevin Lee</a>
+        <p id="currentDay" class="lead"></p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto flex-nowrap">
-              <li class="nav-item active" style="margin: 5px; border-right: 1px solid lightgrey;">
-                <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+              <li class="nav-item active">
+                <a class="nav-link" id="name" href="#">About<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item" style="margin: 5px; border-right: 1px solid lightgrey;">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <li class="nav-item">
+                <a class="nav-link" id="name" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item" style="margin: 5px;">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link" id="name" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
-            <div class="container-fluid w-75 float-left" style="margin:30px; padding: 30px; border:2px solid #cecece;">
+            <div class="container-fluid w-75 float-left" style="margin:30px; padding: 30px; border:2px solid #cecece; border-radius: 25px;">
                 <div class="row">                                                               
                   <div class="col-xs-12 bg-white text-dark .text-left" style="padding:30px;">
                       <h2 style="color:teal">
                         About Me 
                       </h2>
                       <hr style="height:3px;border-width:0;color:gray;background-color:lightgrey">
-                      <p style="font-size:x-large;"><img src="Assets/Images/portrait.jpg" alt="suzuki cappuccino" height="289" width="300" class="float-left" style="margin:10px;">
+                      <p style="font-size:x-large;"><img src="Assets/Images/linkedin.jpg" alt="me" height="289" width="300" class="float-left" style="margin:10px; border-radius: 25px;">
                       I have been in the IT Industry for 20 years. Initially, I was a Technical Support representative for a webhosting company in Atlanta. Eventually, I began my journey into Leadership and Management. 
                       During this time, I traveled the world and built teams ranging from NOC Analysts to Dev/Engineering Teams. 
                       
@@ -60,7 +52,9 @@
                       Over the past few years, I have been longing to catch up on the latest Development techniques as I feel I have fallen behind and lost a certain amount of connection with the teams I usually lead. 
                       This has led me to this Full Stack Development Course.
                     <br>
-                  <a href="https://www.linkedin.com/in/kevinlee138/">Follow me on Linked in!</a></p>
+                  <button onclick="location.href='https://www.linkedin.com/in/kevinlee138/';"><i class="fab fa-linkedin-in"></i></button>
+                  <button onclick="location.href='https://www.facebook.com/kevin.lee.5074/';"><i class="fab fa-facebook-f"></i></button>
+                  <button onclick="location.href='https://github.com/klee138/';"><i class="fab fa-github-square"></i></button>
                   </div>          
                 </div>                                                      
             </div>  
@@ -68,5 +62,8 @@
               <hr style="height:5px;margin:-5px;border-width:0;background-color:teal">
               <p>Copyright</p>
             </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="script.js"></script>
 </body>
 </html>
