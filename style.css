@@ -31,3 +31,11 @@ body {
  #currentDay {
     color: yellow;
  }
+ .container-fluid {
+   border-radius: 25px;
+ }
+ p {
+   color: navy;
+   text-indent: 30px;
+   text-decoration: darkslategray;
+ }
